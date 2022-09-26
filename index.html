@@ -51,7 +51,16 @@
     <main class="main">
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="button-open" data-modal-open>Замовити послугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="button-close" type="button" data-modal-close>
+              <svg width="11px" height="11px" class="close-icon">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="benefits section">
         <!--Сенсовий заголовок <h2 class="benefits-title">Наші переваги</h2>Сенсовий заголовок-->
@@ -101,33 +110,21 @@
           <h2 class="services-title title">Чим ми займаємося</h2>
           <ul class="services-list list">
             <li class="item">
-              <div class="thumb">
-                <img src="./images/img1.jpg" alt="Розробка вебсайтів" width="370" height="294" />
-                <div class="thumb-text">
-                  <p class="services-text">Десктопні додатки</p>
-                </div>
-              </div>
+              <img src="./images/img1.jpg" alt="Розробка вебсайтів" width="370" height="294" />
+              <p class="services-text">Десктопні додатки</p>
             </li>
             <li class="item">
-              <div class="thumb">
-                <img
-                  src="./images/img2.jpg"
-                  alt="Створення мобільних додатків"
-                  width="370"
-                  height="294"
-                />
-                <div class="thumb-text">
-                  <p class="services-text">Мобільні додатки</p>
-                </div>
-              </div>
+              <img
+                src="./images/img2.jpg"
+                alt="Створення мобільних додатків"
+                width="370"
+                height="294"
+              />
+              <p class="services-text">Мобільні додатки</p>
             </li>
             <li class="item">
-              <div class="thumb">
-                <img src="./images/img3.jpg" alt="Веб-дизайн" width="370" height="294" />
-                <div class="thumb-text">
-                  <p class="services-text">Дизайнерські рішення</p>
-                </div>
-              </div>
+              <img src="./images/img3.jpg" alt="Веб-дизайн" width="370" height="294" />
+              <p class="services-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -411,5 +408,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
